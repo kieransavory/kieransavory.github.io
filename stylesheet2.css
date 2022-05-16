@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'DotGothic16', sans-serif;
+    animation: flicker 0.1s infinite;
+    color: rgb(190, 190, 190);
+    background-color: rgb(0, 0, 135);
+    user-select: none;
+}
+
+
+.errormsg{
+    width: 40%;
+    margin: auto;
+    transform: translateY(30vh);
+}
+
+.errormsg > h1 {
+    font-size: 40px;
+}
+
+.errormsg > p {
+    font-size: 20px;
+}
+
+.errormsg > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.errormsg > a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.cursor{
+    font-size: 20px;
+    animation: flicker 0.1s infinite;
+    animation: cursorFlicker 1s infinite;
+}
+
+
+@keyframes flicker {
+
+    0%   { opacity:1; }
+    50%  { opacity:0.9;}
+    100% { opacity:1;}
+    
+}
+
+@keyframes cursorFlicker {
+
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+    
+}
+

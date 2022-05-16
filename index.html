@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body onload="timeDisplay()">
+
+<!-- Welcome modal markup -->
+
+        <div class="startmodal" id="startModal">
+            <div class="startmodalhead">
+                <p id="modalwelcometitle">Welcome</p>
+                <span class="startmodalexitbutton" id="startmodalexit" onclick="startModal.remove(); welcomeBar.remove();">X</span>
+            </div>
+
+            <div class="startmodaltitle">
+                <h1>Welcome to <span style="font-weight: 900; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" >My Portfolio</span></h1>
+            </div>
+
+            <div class="startmodalhelp">
+                <p>My name is Kieran Savory...
+                </p>
+                <p style="font-weight:100; font-size: 14px;">I am a self-taught front-end web developer, taking a modern approach to UI and UX development. I believe that the web 
+                    is a powerful tool for programming, and set myself the challenge of re-creating a staple in computer science history - Windows 95. Click the start icon in the 
+                    taskbar to get started, and thankyou for taking the time to look at my website. For the best experience, view this website in fullscreen mode. (F11)
+                </p>
+            </div>
+        </div>
+
+<!-- Start menu markup -->
+        <div>
+            <nav class="startmenu" id="startmenu">
+            </nav>
+        
+        </div>
+        
+
+
+
+<!-- Taskbar markup -->
+        <footer class="taskbar">
+
+            <div class="welcomebar" onclick="startModalHider();" id="welcomeBar">
+                <p>Welcome</p>
+            </div>
+
+            <div class="timedisplay">
+                <span id="timedisplay" ondblclick ="clockModal();" onload="timedisplay();"></span>
+            </div>
+
+            <div onclick="startMenuModal();" id="startbutton" class="startbutton"> 
+                <img src="windowslogo.png" alt="">
+                <p>Start</p>
+                
+            </div>
+
+        </footer>
+
+
+ 
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

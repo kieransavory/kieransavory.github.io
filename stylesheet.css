@@ -241,11 +241,7 @@ body{
 
 .startmenu ul li:hover {
     color: white;
-    background-color: blue;
+    background-color: rgb(0, 0, 152);
 
 }
 
-.cursor{
-    font-size: 20px;
-    animation: flicker 0.1s infinite;
-}

@@ -13,4 +13,6 @@ input form.
 17/5/22: 
 Today, I tackled existing bugs relative to the about me modal window or (in this instance) pseudo executable file. classList.toggle.('active') was providing 
 unwarranted results upon onclick events firing at various locations. To combat this, and not have the element removed from the node tree completely, I decided 
-to utilise visibility: hidden; and visibility: visible; so that the elements were callable when required. 
+to utilise visibility: hidden; and visibility: visible; so that the elements were callable when required. Testing shows that the About Me modal window operates
+as required, "minimising" the modal window upon clicking the relevant taskbar header, doing nothing (if modal window is open) when clicked on through the start menu
+and opening the taskbar tab and modal window when both are "closed". 

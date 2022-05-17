@@ -10,10 +10,96 @@ body{
 }
 
 
+/* Preliminary login screen styling */
+#loginscreenmodal > h3{
+    position: absolute;
+    background-color: rgb(0, 0, 152);
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 100;
+}
+
+#loginscreenmodal > p{
+    position: absolute;
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    top: 20px;
+    left: 0px;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 100;
+}
+
+#loginbutton{
+    background-color: rgb(162, 162, 162);
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    width: 70px;
+    height: 22px;
+
+}
+
+.informationicon:hover{
+    opacity: 0.5;
+}
+
+#inputdiv{
+    margin-top: 50px;
+}
+
+#logininput{
+
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    
+}
+
+#loginscreenmodal{
+    background-color: rgb(162, 162, 162);
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    transform: translateY(25vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+.loginscreen{
+    background-color: rgb(1,130,129);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    
+}
+
+.loginscreen.active{
+    display: none;
+}
+
+
+/* Taskbar markup */
+
+
 .taskbar{
     width: 100vw;
     height: 40px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     background-color: rgb(162, 162, 162);
     border-top: 2px solid white;
@@ -33,7 +119,19 @@ body{
     border-right: 3px solid white;
 }
 
+.welcomebar:hover{
+    cursor: pointer;
+}
+
+.welcomebar.active{
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+}
+
 .welcomebar > p{
+    font-family: 'DotGothic16', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +164,8 @@ body{
     font-family: 'DotGothic16', sans-serif;
     font-size: 20px;
 }
+
+/* Preliminary welcome modal styling */
 
 .startmodal{ 
     width: 700px;
@@ -155,6 +255,8 @@ body{
     font-family: 'DotGothic16', sans-serif;
 }
 
+/* Start menu and button styling */
+
 
 .startbutton{
     position: absolute;
@@ -180,7 +282,7 @@ body{
 
 .startbutton:hover{
     background-color: rgb(145, 144, 144);
-    cursor: default;
+    cursor: pointer;
     user-select: none;
 }
 
@@ -243,5 +345,9 @@ body{
     color: white;
     background-color: rgb(0, 0, 152);
 
+}
+
+#listAboutMe:hover{
+    cursor: pointer;
 }
 

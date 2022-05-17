@@ -18,6 +18,15 @@ body{
     transform: translateY(30vh);
 }
 
+.errormsg > h2{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    color: rgb(0, 0, 135);
+    background-color: rgb(190, 190, 190);
+}
+
 .errormsg > h1 {
     font-size: 40px;
 }

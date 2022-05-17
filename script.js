@@ -1,3 +1,29 @@
+function loginFunction(){
+
+    let userName = document.getElementById('logininput').value;
+    let userNameCapitalised = userName.charAt(0).toUpperCase() + userName.slice(1);
+        
+        if (userName === "") {
+            alert("Please input a name. If you do not wish to input a name, please input an exclamation mark. (!)")
+            return;
+        } 
+        
+        else if (userName === "!") {
+            document.getElementById('loginscreen').classList.toggle('active');
+            document.getElementById('userNameInput').innerHTML = ("")
+        }
+
+        else {
+            document.getElementById('loginscreen').classList.toggle('active');
+            document.getElementById('userNameInput').innerHTML = (" ," + userNameCapitalised + ".")
+        } 
+
+}
+
+
+
+
+
 
 //Function to display the date in the taskbar.
 
@@ -37,7 +63,19 @@ setInterval(timeDisplay, 1000);
 
 function startModalHider(){
     document.getElementById('startModal').classList.toggle('active');
+    document.getElementById('welcomeBar').classList.toggle('active');
 
+}
+
+function startMenuWelcome(){
+    document.getElementById('welcomeBar').style.visibility="visible";
+    document.getElementById('startModal').style.visibility="visible";
+    
+}
+
+function startModalRemover(){
+    document.getElementById('welcomeBar').style.visibility="hidden";
+    document.getElementById('startModal').style.visibility="hidden";
 }
 
 

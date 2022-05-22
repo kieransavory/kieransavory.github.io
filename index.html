@@ -25,8 +25,10 @@
         <h3>Welcome to Windows</h3>
         <p>Type a name to identify yourself to this website. <span title="This data will not be stored, and is only to enhance user experience on this website. If you do not wish to input a name, please input an exclamation mark (!). This website is best viewed in fullscreen mode. (F11)" class="informationicon">&#9432;</span></p>
             <div id="inputdiv">
-                <input id="logininput" type="text">
+                <form method="dialog">
+                <input autofocus="true" id="logininput" type="text">
                 <button id="loginbutton" type="submit" onclick="loginFunction();">OK</button>
+            </form>
             </div>
     </div>
 </div>
@@ -53,6 +55,16 @@
             </div>
         </div>
 
+<!-- Desktop Icon Markup -->
+
+        <div class="desktopicons">
+            <ul>
+                <li> <img src="notepad.png" id="notepadIcon" alt="Notepad desktop icon."></li>
+                <li> <img onclick="emailLink();" src="email.png" id="emailIcon" alt="Email desktop icon."></li>
+                <li> <img onclick="githubLink();" src="github.png" id="githubIcon" alt="Github desktop icon."></li>
+            </ul>
+        </div>
+
 
 
 <!-- Start menu markup -->
@@ -61,9 +73,14 @@
 
             <nav class="startmenu" id="startmenu">
                 <ul>
+                    <li id="listProgram">Programs &#9654;</li>
                     <li>TEST</li>
                     <li>TEST</li>
-                    <li id="listAboutMe"onclick="startMenuWelcome();">About Me</li>
+                    <li>TEST</li>
+                    <li>TEST</li>
+                    <li>TEST</li>
+                    <li>TEST</li>
+                    <li id="listAboutMe" onclick="startMenuWelcome();">About Me</li>
                     <a style="text-decoration: none; color: black;" href="shutdown.html"><li style="border-top: 3px solid grey;">Sh<span style="text-decoration: underline;">u</span>t Down...</li></a>
                 </ul>
             </nav>

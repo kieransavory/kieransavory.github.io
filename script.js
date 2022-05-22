@@ -1,3 +1,4 @@
+
 function loginFunction(){
 
     let userName = document.getElementById('logininput').value;
@@ -15,14 +16,10 @@ function loginFunction(){
 
         else {
             document.getElementById('loginscreen').classList.toggle('active');
-            document.getElementById('userNameInput').innerHTML = (" ," + userNameCapitalised + ".")
+            document.getElementById('userNameInput').innerHTML = ("," + userNameCapitalised + ".")
         } 
 
 }
-
-
-
-
 
 
 //Function to display the date in the taskbar.
@@ -71,16 +68,13 @@ function startMenuWelcome(){
     document.getElementById('welcomeBar').style.visibility="visible";
     document.getElementById('startModal').style.visibility="visible";
     
+    
 }
 
 function startModalRemover(){
     document.getElementById('welcomeBar').style.visibility="hidden";
     document.getElementById('startModal').style.visibility="hidden";
 }
-
-
-
-
 
 //Function to hide the start menu and adjust styling on start menu button.
 function startMenuModal(){
@@ -89,6 +83,36 @@ function startMenuModal(){
    document.getElementById('startbutton').classList.toggle('active');
 
 }
+
+
+//Script to make github icon in desktop work. 
+function githubLink(){
+
+        //Change background colour on single click
+        document.getElementById('githubIcon').style.backgroundColor="dodgerblue";
+
+        //Open Github profile and remove bg colour on dblclick 
+        document.getElementById('githubIcon').addEventListener("dblclick", () => {
+            window.open("https://github.com/kieransavory", "target=_blank")
+            document.getElementById('githubIcon').style.backgroundColor="transparent";
+        })
+
+}
+
+//Script to make github icon in desktop work. 
+function emailLink(){
+
+    //Change background colour on single click
+    document.getElementById('emailIcon').style.backgroundColor="dodgerblue";
+
+    //Open Github profile and remove bg colour on dblclick 
+    document.getElementById('emailIcon').addEventListener("dblclick", () => {
+        window.open("mailto:kieransavory@hotmail.com", "target=_blank")
+        document.getElementById('emailIcon').style.backgroundColor="transparent";
+    })
+
+}
+
 
 
 

@@ -6,6 +6,11 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.navbar-toggle{
+    visibility: hidden;
 }
 
 /* Scrollbar styling */
@@ -14,7 +19,7 @@ body{
     width: 12.5px;
   }
 ::-webkit-scrollbar-track {
-    background-color: #ffffff; 
+    background-color: #bdbdbd; 
   }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(120, 120, 120); 
@@ -29,6 +34,24 @@ body{
 
 .hero{
     background-image: url(dbskitchen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.heroabout{
+    background-image: url(dbsabouthero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.heroabout2{
+    background-image: url(dbsdesign.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -262,6 +285,10 @@ body{
         display: none;
     }
 
+    .navbar-toggle{
+        visibility: visible;
+    }
+
     .mobilenavbar{
         transition: all 0.5s;
         animation: swipeIn 0.1s;
@@ -338,8 +365,9 @@ body{
     
     .whoweare > p {
         width: 70%;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.2;
+        margin: 10px;
     }
     
     /* Hero image 2 for mobile */
@@ -363,11 +391,10 @@ body{
     }
     
     .whatwedo > p {
-        margin: 40px;
+        margin: 10px;
         line-height: 1.2;
-        width: 80%;
-        padding: 1vw;
-        font-size: 16px;
+        width: 70%;
+        font-size: 15px;
     }
     
     

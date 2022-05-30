@@ -19,7 +19,7 @@ body{
 }
 
 .errormsg > h2{
-    text-align: center;
+text-align: center;
     width: 50%;
     margin: auto;
     padding: 5px;
@@ -70,3 +70,16 @@ body{
     
 }
 
+
+@media screen and (max-width: 420px) {
+
+    .errormsg{
+        text-align: center;
+        width: 90vw;
+        transform: translateY(0);
+        margin: 20px;
+    }
+
+
+    
+}
